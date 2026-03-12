@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { PageData } from './$types';
+  import { base } from '$app/paths';
   import FeatureList from '$lib/components/FeatureList.svelte';
 
   let { data }: { data: PageData } = $props();
@@ -30,7 +31,7 @@
 
 <div class="p-6 md:p-8 max-w-3xl mx-auto">
   <a
-    href="/"
+    href="{base}/"
     class="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 mb-6 transition-colors"
   >
     ← Back to dashboard
@@ -118,7 +119,7 @@
     <FeatureList items={cta.benefits} icon="check" />
     <p class="mt-4 text-lg font-semibold text-slate-900">{cta.price}</p>
     <a
-      href="/"
+      href="{base}/"
       class="mt-4 inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
     >
       {cta.buttonLabel}
@@ -128,14 +129,14 @@
   <!-- SECTION 5 — Secondary actions -->
   <section class="flex flex-wrap items-center gap-4 text-sm">
     <a
-      href="/"
+      href="{base}/"
       class="text-blue-600 hover:text-blue-700 font-medium underline underline-offset-2"
     >
       Review answers
     </a>
     <span class="text-slate-300" aria-hidden="true">·</span>
     <a
-      href="/"
+      href="{base}/"
       class="text-blue-600 hover:text-blue-700 font-medium underline underline-offset-2"
     >
       Restart quiz

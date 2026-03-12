@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { base } from '$app/paths';
 
 	let { data }: { data: PageData } = $props();
 	const quiz = $derived(data.quiz);
@@ -101,7 +102,7 @@
 
 		<div class="relative mx-auto max-w-4xl px-6 pb-14 pt-8 md:px-8">
 			<a
-				href="/"
+				href="{base}/"
 				class="group mb-8 inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-white"
 			>
 				<svg class="h-4 w-4 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -293,7 +294,7 @@
 
 					<div class="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
 						<a
-							href="/"
+							href="{base}/"
 							class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-slate-900 shadow-lg shadow-white/10 transition-all hover:bg-slate-100 hover:shadow-xl hover:shadow-white/20 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-slate-900"
 						>
 							{cta.buttonLabel}
@@ -312,7 +313,7 @@
 		<!-- ─── Secondary Actions ─── -->
 		<section class="mb-12 flex items-center justify-center gap-6 text-sm">
 			<a
-				href="/"
+				href="{base}/"
 				class="group inline-flex items-center gap-1.5 font-medium text-slate-600 transition-colors hover:text-slate-900"
 			>
 				<svg class="h-4 w-4 text-slate-400 transition-colors group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -323,7 +324,7 @@
 			</a>
 			<span class="h-4 w-px bg-slate-200" aria-hidden="true"></span>
 			<a
-				href="/"
+				href="{base}/"
 				class="group inline-flex items-center gap-1.5 font-medium text-slate-600 transition-colors hover:text-slate-900"
 			>
 				<svg class="h-4 w-4 text-slate-400 transition-colors group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { base } from '$app/paths';
 
 	let { data }: { data: PageData } = $props();
 	const quiz = $derived(data.quiz);
@@ -52,7 +53,7 @@
 </svelte:head>
 
 <div class="v3">
-	<a href="/" class="v3-back" style="--i:0">
+	<a href="{base}/" class="v3-back" style="--i:0">
 		<svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
 			<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
 		</svg>
@@ -152,7 +153,7 @@
 					{/each}
 				</ul>
 			</div>
-			<a href="/" class="v3-cta-action">
+			<a href="{base}/" class="v3-cta-action">
 				{cta.buttonLabel}
 				<span class="v3-arrow">→</span>
 			</a>
@@ -161,9 +162,9 @@
 
 	<!-- Footer -->
 	<footer class="v3-foot" style="--i:11">
-		<a href="/" class="v3-foot-link">Review answers</a>
+		<a href="{base}/" class="v3-foot-link">Review answers</a>
 		<span class="v3-foot-dot" aria-hidden="true">·</span>
-		<a href="/" class="v3-foot-link">Restart quiz</a>
+		<a href="{base}/" class="v3-foot-link">Restart quiz</a>
 	</footer>
 </div>
 
