@@ -10,6 +10,13 @@ const config = {
     paths: {
       base
     },
+    prerender: {
+      // With paths.base, prerender may request "/" which 404s; ignore so build continues
+      handleHttpError: (details) => {
+        if (base && details.path === '/' && details.status === 404) return;
+        throw new Error(details.message);
+      }
+    },
     adapter: adapter({
       pages: 'build',
       assets: 'build',
