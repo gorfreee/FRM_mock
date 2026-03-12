@@ -11,9 +11,9 @@ const config = {
       base
     },
     prerender: {
-      // With paths.base, prerender may request "/" which 404s; ignore so build continues
+      // With paths.base, prerender may request paths without base prefix (e.g. /, /quiz-result); ignore those 404s
       handleHttpError: (details) => {
-        if (base && details.path === '/' && details.status === 404) return;
+        if (base && details.status === 404 && !details.path.startsWith(base)) return;
         throw new Error(details.message);
       }
     },
