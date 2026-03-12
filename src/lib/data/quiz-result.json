@@ -1,0 +1,37 @@
+{
+  "quizId": "frm-quiz-foundations-01",
+  "title": "Free FRM Practice Quiz",
+  "completedAt": "2025-03-12T14:32:00Z",
+  "totalQuestions": 5,
+  "correctCount": 2,
+  "timeSpentSeconds": 190,
+  "scorePercent": 40,
+  "breakdown": [
+    { "topic": "Quantitative Analysis", "correct": 1, "total": 3 },
+    { "topic": "Valuation & Risk Models", "correct": 0, "total": 1 },
+    { "topic": "Financial Markets", "correct": 1, "total": 1 }
+  ],
+  "passed": false,
+  "performanceMessage": "The FRM exam is challenging. Most candidates need hundreds of practice questions before they feel confident.",
+  "nextSuggestedQuiz": {
+    "id": "frm-quiz-foundations-02",
+    "title": "Foundations of Risk — Part 2"
+  },
+  "platformFeatures": [
+    "1200+ FRM-style practice questions",
+    "Full mock exams simulating the real test",
+    "Performance tracking by topic",
+    "Detailed explanations for every question"
+  ],
+  "cta": {
+    "title": "Unlock the Full FRM Question Bank",
+    "benefits": [
+      "Unlimited quizzes",
+      "Full question bank",
+      "Mock exams",
+      "Lifetime access"
+    ],
+    "price": "€29 one-time payment",
+    "buttonLabel": "Unlock Full Access"
+  }
+}
